@@ -1,0 +1,509 @@
+<?php
+$link = new mysqli('localhost', 'seaban_admin', 'master12!', 'seaban_db');
+$stmt = $link->prepare("INSERT INTO `iplog` (`ip`) VALUES (?)");
+$stmt->bind_param('s', $_SERVER['REMOTE_ADDR']);
+$stmt->execute();
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+<link rel="icon" type="image/vnd.microsoft.icon" href="assets/fav.ico">
+
+    <title>Benson Nguru Mburu</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/main.css" rel="stylesheet">
+    
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/smoothscroll.js"></script> 
+    <script src="assets/js/Chart.js"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+      <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body data-spy="scroll" data-offset="0" data-target="#nav">
+
+	<div id="section-topbar">
+		<div id="topbar-inner">
+			<div class="container">
+				<div class="row">
+					<div class="dropdown">
+						<ul id="nav" class="nav">
+							<li class="menu-item"><a class="smoothScroll" href="#about" title="About"><i class="icon-user"></i></a></li>
+							<li class="menu-item"><a class="smoothScroll" href="#resume" title="Resume"><i class="icon-file"></i></a></li>
+							<li class="menu-item"><a class="smoothScroll" href="#work" title="Works"><i class="icon-briefcase"></i></a></li>
+							<li class="menu-item"><a class="smoothScroll" href="#contact" title="Contact"><i class="icon-envelope"></i></a></li>
+						</ul><!--/ uL#nav -->
+					</div><!-- /.dropdown -->
+
+					<div class="clear"></div>
+				</div><!--/.row -->
+			</div><!--/.container -->
+
+			<div class="clear"></div>
+		</div><!--/ #topbar-inner -->
+	</div><!--/ #section-topbar -->
+	
+	<div id="headerwrap">
+		<div class="container">
+			<div class="row centered">
+				<div class="col-lg-12">
+					<h1>Benson .N. Mburu</h1>
+					<h3>Developer, Designer and Programmer</h3>
+				</div><!--/.col-lg-12 -->
+			</div><!--/.row -->
+		</div><!--/.container -->
+	</div><!--/.#headerwrap -->
+	
+
+	<section id="about" name="about"></section>
+	<div id="intro">
+		<div class="container">
+			<div class="row">
+				
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>ABOUT</h5>
+				</div>
+				<div class="col-lg-6">
+					<p>A competent and committed IT graduate looking for a rewarding career in the Information Technology or computing sector. Highly focused with a comprehensive knowledge of designing, developing the layout, visual appearance,  usability and scripting of web and standalone applications . Possessing a proven track record of successfully completing projects from the concept through to design, testing and handover.</p>
+				</div>
+				<div class="col-lg-3">
+					<p><a href="assets/docs/Benson Nguru Mburu.pdf"><i class="icon-file"></i></a> <sm>DOWNLOAD PDF</sm></p>
+				</div>
+				
+			</div><!--/.row -->
+		</div><!--/.container -->
+	</div><!--/ #intro -->
+
+
+	<section id="resume" name="resume"></section>
+	<!--EDUCATION DESCRIPTION -->
+	<div class="container desc">
+		<div class="row">
+
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>EDUCATION</h5>
+				</div>
+				<div class="col-lg-6">
+					<p><t> CCNA Certification</t><br/>
+						Tracom COllege <br/>
+						<i>2 Years Course</i>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm></sm><br/>
+					<imp><sm>IN PROGRESS</sm></imp>
+					</p>
+				</div>
+	
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Bachelor's Degree in Business Management and information Technology</t><br/>
+						Kabarak  University <br/>
+						<i>4 Years Course</i>
+					</p>
+				</div>
+				<div class="col-lg-3">
+<p><sm>GRADUATED IN NOV 2014</sm><br/>
+					<imp><sm>Graduated in NOV 2014</sm></imp>
+					</p>				</div>
+	
+		</div><!--/.row -->
+		<br>
+		<hr>
+	</div><!--/.container -->
+	
+	
+	<!--WORK DESCRIPTION -->
+	<div class="container desc">
+		<div class="row">
+
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>WORK</h5>
+				</div>
+				<div class="col-lg-6">
+					<p><t>Web Application Developer</t><br/>
+						Laikiana Hospitality solutions. <br/>
+					</p>
+					<p><more>Architected Development of Various Web Portals,  Web services and online  payment platforms<br/>
+Designed the logical and physical data model  for a MySQL database.<br/>
+Designed and programmed a  custom internal mailing  service <br/>
+Worked on Inbound and Outbound Web Services to combine component-based development and Internet standard protocols that include HTTP, XML, Simple Object Access Protocol (SOAP), and Web Services Description Language (WSDL). <br/>
+Integration of safaricom listening service (WSDL) to a custom generated MPESA API and a custom Cart system<br/>
+Advanced Networking and Networking devices configuration <br/>
+Localize an Indian based CMS to a Kenyan acceptable standard.<br/>
+.</more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>MAY 2015 - CURRENT</sm></p>
+				</div>
+	
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Web Designer - Freelance</t><br/>
+						http://seabanpr.co.ke <br/>
+						http://thecipher.tk <br/>
+						http://kenyatheater.tk 
+ <br/>
+						
+						
+					</p>
+					<p><more>-Small scale Oracle and MYSQL  database administration  tasks. <br/>
+-Implementation of Web applications with complex business requirements <br/>
+-SSL ,  SSH and Standard TCP/IP MySQL communication protocol<br/>
+ -Cross platform DB migration observing relevant security protocols and maintenance of data integrity.<br/>
+-White hacking of the said portals to establish flaws in design  or programing either in scripting or PL/SQL commands.<br/>
+.</more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>January 2015- May 2015</sm></p>
+				</div>
+					<div class="col-lg-3">
+				</div>
+	
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Web Developer</t><br/>
+						Sportika254. <br/>
+					</p>
+					<p><more>Integration of  social media API’s . <br/>
+Scripting and Development of the said site.<br/>
+Propelled the sites URL  to first page of Google Search through improved modern SEO-techniques.<br/>
+Google Adsense, Google Webmaster tools, Google optimization  integration.<br/>
+PL/SQL scripting and DBA<br/>
+Created a Website clicks or conversions campaign for sporika.co.ke<br/>
+.</more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>January 2015</sm></p>
+				</div>	<div class="col-lg-3">
+				</div>
+	
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Web Application Developer</t><br/>
+						Cracs Fly Fishes. <br/>
+					</p>
+					<p><more>Design, Develop and scripted an ecommerce platform<br/>
+Created a Online SMS alert system for the said ecommerce platform <br/>
+Designed the logical and physical data model  for a MySQL database <br/>
+Intergration of various payment system into one cart based system<br/>
+Content aggregation and population<br/>
+</more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>JUNE 2010 - JULY 2012</sm></p>
+				</div>	<div class="col-lg-3">
+				</div>
+	
+		</div><!--/.row -->
+		<br>
+		<hr>
+	</div><!--/.container -->
+
+
+	<!--AWARDS DESCRIPTION -->
+	<div class="container desc">
+		<div class="row">
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>Voluntary Expirience</h5>
+				</div>
+				<div class="col-lg-6">
+					<p><t>Volunteer</t><br/>
+						RED CROSS ASSCOCIATION <br/>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>2008- Date</sm></p>
+				</div>
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>INTERN</t><br/>
+						NAKURU RURAL WATER AND SANITATION COMPANY
+					</p>
+					<p><more>Data entry
+Data audit<br/>
+Database administration<br/>
+Network and Networking Devices Configuration.<br/></more></p>
+				</div>
+				<div class="col-lg-3">
+				</div>			
+				<div class="col-lg-3">
+					<p><sm>AUGUST 2013– DECEMBER 2013</sm></p>
+				</div>
+	
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Volunteer</t><br/>
+						Oljabet Medical Center
+					</p>
+					<p><more>Provide hospice services to patients<br/>
+Maintain hospital records<br/>
+Provide community awareness in medical related fields<br/></more></p>
+				</div>
+				<div class="col-lg-3">
+				</div>			
+				<div class="col-lg-3">
+					<p><sm>April 2013- May 2013 </sm></p>
+				</div>
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Volunteer</t><br/>
+						Oljabet Medical Center
+					</p>
+					<p><more>Provide hospice services to patients<br/>
+Maintain hospital records<br/>
+Provide community awareness in medical related fields<br/></more></p>
+				</div>
+				<div class="col-lg-3">
+				</div>			
+				<div class="col-lg-3">
+					<p><sm>April 2012- May 2012  </sm></p>
+				</div>
+					<div class="col-lg-6 col-lg-offset-3">
+					<p><t>Volunteer</t><br/>
+						CHILD RESCUE AND COUNSELLING CENTER:
+					</p>
+					<p><more>Communication and report writing<br/>
+Writing press releases/reports <br/>
+Parents and Child mobilization through events organization<br/>
+</more></p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>DECEMBER 2010 AUGUST 2011</sm></p>
+				</div>
+		
+		</div><!--/.row -->
+		<br>
+	</div><!--/.container -->
+	
+	
+	<!--SKILLS DESCRIPTION -->
+	<div id="skillswrap">
+		<div class="container">
+			<div class="row">
+					<div class="col-lg-2 col-lg-offset-1">
+						<h5>SKILLS</h5>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="javascript" height="130" width="130"></canvas>
+						<p>Scripting</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 90,
+										color:"#1abc9c"
+									},
+									{
+										value : 10,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="bootstrap" height="130" width="130"></canvas>
+						<p>Design</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 90,
+										color:"#1abc9c"
+									},
+									{
+										value : 10,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="wordpress" height="130" width="130"></canvas>
+						<p>Developing</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 95,
+										color:"#1abc9c"
+									},
+									{
+										value : 5,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					
+					<div class="col-lg-3 col-lg-offset-3 centered">
+						<canvas id="html" height="130" width="130"></canvas>
+						<p>Networkin</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 80,
+										color:"#1abc9c"
+									},
+									{
+										value : 20,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="photoshop" height="130" width="130"></canvas>
+						<p>Software Developement</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 80,
+										color:"#1abc9c"
+									},
+									{
+										value : 20,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+					<div class="col-lg-3 centered">
+						<canvas id="illustrator" height="130" width="130"></canvas>
+						<p>API and Server Client configrator</p>
+						<br>
+						<script>
+							var doughnutData = [
+									{
+										value: 89,
+										color:"#1abc9c"
+									},
+									{
+										value : 11,
+										color : "#ecf0f1"
+									}
+								];
+								var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+						</script>
+					</div>
+
+			</div><!--/.row -->
+			<br>
+		</div><!--/.container -->
+	</div><!--/ #skillswrap -->
+
+
+
+	<section id="work" name="work"></section>
+	<!--PORTFOLIO DESCRIPTION -->
+	<div class="container desc">
+		<div class="row">
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>PORTFOLIO</h5>
+				</div>
+				<div class="col-lg-6">
+					<p><img class="img-responsive" src="assets/img/port01.jpg" alt=""></p>
+				</div>
+				<div class="col-lg-3">
+					<p>Seaban </p>
+				<p><more>http://seabanpr.co.ke.<br/><br/>
+					<sm><i class="icon-tag"></i> CMS</sm></more> 
+				</p>
+				</div>
+	
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><img class="img-responsive" src="assets/img/port02.jpg" alt=""></p>
+				</div>
+				<div class="col-lg-3">
+						<p>Sportika254</p>
+					<p><more>http://sportika.co.ke.<br/><br/>
+						<sm><i class="icon-tag"></i> Sports Blog</sm></more> 
+					</p>
+				</div>
+				
+				<div class="col-lg-6 col-lg-offset-3">
+					<p><img class="img-responsive" src="assets/img/port03.jpg" alt=""></p>
+				</div>
+				<div class="col-lg-3">
+						<p>Laikiana Hospitality Solutions</p>
+					<p><more>Lhttp://laikianahs.co.ke.<br/><br/>
+						<sm><i class="icon-tag"></i> web Application Development</sm></more> 
+					</p>
+				</div>
+		
+		</div><!--/.row -->
+		<br>
+		<br>
+	</div><!--/.container -->
+	
+
+
+	<section id="contact" name="contact"></section>
+	<!--FOOTER DESCRIPTION -->
+	<div id="footwrap">
+		<div class="container">
+			<div class="row">
+			
+				<div class="col-lg-2 col-lg-offset-1">
+					<h5>CONTACT</h5>
+				</div>
+				<div class="col-lg-6">
+					<p><t>Email</t><br/>
+						 admin@kenyaprogrammers.tk <br/>
+					</p>
+					<p><t>Adress</t><br/>
+						
+						Postal 2097-20300 <br/>
+						Nyahururu, Kenya. <br/>
+					</p>
+					<p><t>Phone</t><br/>
+						+254721799582 <br/>
+					</p>
+				</div>
+				<div class="col-lg-3">
+					<p><sm>SOCIAL LINKS</sm></p>
+					<p>
+						<a href="#"><i class="icon-dribbble"></i></a>
+						<a href="http://twitter.com/bensohmburu"><i class="icon-twitter"></i></a>
+						<a href="#"><i class="icon-facebook"></i></a>
+						<a href="#"><i class="icon-linkedin"></i></a>
+						<a href="#"><i class="icon-apple"></i></a>
+
+					</p>
+				</div>
+			</div><!--/.row -->
+		</div><!--/.container -->
+	</div><!--/ #footer -->
+	
+	<div id="c">
+		<div class="container">
+			<p>Created by <a href="http://thecipher.tk">Quantum Ke</a></p>
+		
+		</div>
+	</div>
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/bootstrap.js"></script>
+  </body>
+</html>
